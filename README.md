@@ -28,6 +28,24 @@
 
 
 
+3. **Hands-on:  ETL and Data Manipulation** - 50 min
+
+
+
+4. **Break** - 10 min
+
+
+
+5. **Hands-on** - 50 min
+
+
+
+6. **Break** - 10 min
+
+
+
+7. **Wrap-up and Conclusion** - 25 min
+
 
 
 
