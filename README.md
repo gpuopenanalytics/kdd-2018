@@ -2,7 +2,7 @@
 # Accelerating the Scalable Data Science Environment with GPU-enabled Python
 
 ## KDD'18 Hands-On Tutorial
-## Tuesday 8am
+## Tuesday 8:30 am
 
 ## ![](https://nvidianews.nvidia.com/media/sites/219/images/logo.png)
 
@@ -10,9 +10,6 @@
 ### Tutorial Agenda
 
 1. **Introduction and Background**  - 20 min  slides / discussion
-
-   
-
    - [ ] Who we are 
    - [ ] Big Data Ecosystem
    - [ ] Challenges in Big Data today
@@ -26,19 +23,18 @@
 
 
 
-2. **Getting connected and break** - 15 mim
-
-- Connect to Qwiklabs
-- Validate the container is working
-- break
-
-
-
-
+2.  **Getting connected and break** - 15 mim
+   - [ ] Connect to Qwiklabs
+   - [ ] Validate the container is working
+   - [ ] break
 
 
 
 3. **Hands-on:  ETL and Data Manipulation** - 50 min
+   - [ ] Lab 1: Data Loading and Manipulation - 10 min
+     - [ ] Traditional interface through Pandas
+     - [ ] Pandas to/from PyGDF
+     - [ ] Zero-Copy GPU interface through PyGDF
 
 
 
