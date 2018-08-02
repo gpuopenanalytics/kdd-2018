@@ -24,64 +24,52 @@
 
 
 2.  **Getting connected and break** - 15 mim
-   - [ ] Connect to Qwiklabs
-   - [ ] Validate the container is working
-   - [ ] break
-
+    - [ ] Connect to Qwiklabs
+    - [ ] Validate the container is working
+    - [ ] break
 
 
 3. **Hands-on:  ETL and Data Manipulation** - 50 min
-   - [ ] Lab 1: Data Loading and Manipulation - 10 min
+   - [ ] Lab 1: Data Loading and Manipulation
      - [ ] Traditional interface through Pandas
      - [ ] Pandas to/from PyGDF
-     - [ ] Zero-Copy GPU interface through PyGDF
+     - [ ] Column Function and Basic Transforms
+     - [ ] Filtering
+     - [ ] Student Assignment:  Z-Scoring
 
+   - [ ] Lab 2: 
 
+     - [ ] Test-Train-Validate 
+     - [ ] One-hot Encoding
+     - [ ] Sorting
+
+     
 
 4. **Break** - 10 min
 
 
 
 5. **Hands-on** - 50 min
-
-
+   - [ ] Lab 3: User Defined Functions
+     - [ ] Student Assignment:  Z-Scoring
+   - [ ] Lab 4: Machine Learning Algorithms
+     - [ ] XGBoost
+     - [ ] 
+     - [ ] 
 
 6. **Break** - 10 min
 
 
 
 7. **Wrap-up and Conclusion** - 25 min
+   - [ ] Scaling out to multi-GPU and multi-node
+     - [ ] Dask
+     - [ ] Dask GDF
+   - [ ] Additional Algorithms and Roadmaps
+     - [ ] Graph Algorithms
+       - [ ] PageRank, Jaccard, BFS
+     - [ ] Visualization
+       - [ ] Graphistry
+     - [ ] Machine Learning Algorithms
+   - [ ] Comclusion
 
-
-
-
-1. Tutorial (hands-on) (2 hrs 20 mins)
-    a. GPU-Accelerated Database
-    i. Ingesting data
-    ii. Sample SQL queries
-    iii. Traditional interface through Pandas
-    iv. Zero-Copy GPU interface through PyGDF
-    b. GPU-Accelerated Data Manipulation
-    i. Pandas to/from PyGDF
-    ii. Non-SQL Filters
-    iii. Test-Train-Validate Split
-    iv. One-hot encoding
-    v. Sorting
-    vi. User-Defined Functions
-    c. Machine Learning Algorithms
-    i. GLM
-    ii. k-Means Clustering
-    iii. XGBoost
-2. Conclusion Presentation (not hands-on) (15 mins)
-    a. Scaling out to multi-GPU and multi-node
-    i. Dask
-    ii. Dask GDF
-    b. Additional Algorithms and Roadmaps (not hands-on due to time constraints)
-    i. Graph Algorithms
-3. PageRank, Jaccard, BFS
-    ii. Visualization
-4. Graphistry
-    iii. Machine Learning Algorithms
-    c. Future Work
-    i. TensorRT Integration
-    ii. nvGraph migration to GDF
