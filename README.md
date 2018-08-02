@@ -9,67 +9,83 @@
 ***
 ### Tutorial Agenda
 
-1. **Introduction and Background**  - 20 min  slides / discussion
-   - [ ] Who we are 
-   - [ ] Big Data Ecosystem
-   - [ ] Challenges in Big Data today
-     - [ ] Technology interoperability 
-     - [ ] Compute limitations
-   - [ ] Apache Arrow
-   - [ ] GPUs for compute
-   - [ ] The GPU Open Analytics Initiative
-   - [ ] The GPU Data Frame (GDF)
-   - [ ] Python library for GDF (PyGDF)
+### **Introduction and Background**  - 30 min 
+
+- [ ] Who we are 
+- [ ] Big Data Ecosystem
+- [ ] Challenges in Big Data today
+  - [ ] Technology interoperability 
+  - [ ] Compute limitations
+- [ ] Apache Arrow
+- [ ] GPUs for compute
+- [ ] The GPU Open Analytics Initiative
+- [ ] The GPU Data Frame (GDF)
+- [ ] Python library for GDF (PyGDF)
 
 
 
-2.  **Getting connected and break** - 15 mim
-    - [ ] Connect to Qwiklabs
-    - [ ] Validate the container is working
-    - [ ] break
+### **Getting connected and break** - 15 min
 
-
-3. **Hands-on:  ETL and Data Manipulation** - 50 min
-   - [ ] Lab 1: Data Loading and Manipulation
-     - [ ] Traditional interface through Pandas
-     - [ ] Pandas to/from PyGDF
-     - [ ] Column Function and Basic Transforms
-     - [ ] Filtering
-     - [ ] Student Assignment:  Z-Scoring
-
-   - [ ] Lab 2: 
-
-     - [ ] Test-Train-Validate 
-     - [ ] One-hot Encoding
-     - [ ] Sorting
-
-     
-
-4. **Break** - 10 min
+- [ ] Connect to Qwiklabs
+- [ ] Validate the container is working
+- [ ] break
 
 
 
-5. **Hands-on** - 50 min
-   - [ ] Lab 3: User Defined Functions
-     - [ ] Student Assignment:  Z-Scoring
-   - [ ] Lab 4: Machine Learning Algorithms
-     - [ ] XGBoost
-     - [ ] 
-     - [ ] 
+### **Hands-on:  ETL and Data Manipulation** - 30 min
 
-6. **Break** - 10 min
-
+- [ ] Lab 1: Data Loading and Manipulation
+  - [ ] Traditional interface through Pandas
+  - [ ] Pandas to/from PyGDF
+  - [ ] Column Function and Basic Transforms
+  - [ ] Filtering
+  - [ ] Student Assignment:  Z-Scoring
 
 
-7. **Wrap-up and Conclusion** - 25 min
-   - [ ] Scaling out to multi-GPU and multi-node
-     - [ ] Dask
-     - [ ] Dask GDF
-   - [ ] Additional Algorithms and Roadmaps
-     - [ ] Graph Algorithms
-       - [ ] PageRank, Jaccard, BFS
-     - [ ] Visualization
-       - [ ] Graphistry
-     - [ ] Machine Learning Algorithms
-   - [ ] Comclusion
+
+
+### **Break**
+
+
+
+### Hands-on: Training, Encoding, and Sorting
+
+- [ ] Lab 2: 
+
+  - [ ] Test-Train-Validate 
+  - [ ] One-hot Encoding
+  - [ ] Sorting
+
+  
+
+### Break
+
+
+
+### Hands-on: User Defined Functions and Machine Learning 
+
+- [ ] Lab 3: User Defined Functions
+  - [ ] Student Assignment: 
+
+- [ ] Lab 4: Machine Learning Algorithms
+  - [ ] XGBoost
+
+  
+
+### Break 
+
+
+
+### Wrap-up and Conclusion-
+
+- [ ] Scaling out to multi-GPU and multi-node
+  - [ ] Dask
+  - [ ] Dask GDF
+- [ ] Additional Algorithms and Roadmaps
+  - [ ] Graph Algorithms
+    - [ ] PageRank, Jaccard, BFS
+  - [ ] Visualization
+    - [ ] Graphistry
+  - [ ] Machine Learning Algorithms
+- [ ] Comclusion
 
