@@ -32,7 +32,7 @@
 
 
 
-### **Hands-on:  ETL and Data Manipulation** - 30 min
+### Hands-on:  Data Manipulation and Loading Functions - 50 min
 
 - [ ] Lab 1: Data Loading and Manipulation
   - [ ] Traditional interface through Pandas
@@ -40,17 +40,9 @@
   - [ ] Column Function and Basic Transforms
   - [ ] Filtering
   - [ ] Student Assignment:  Z-Scoring
+- [ ] Slides on GDF and Column Functions
 
-
-
-
-### **Break**
-
-
-
-### Hands-on: Training, Encoding, and Sorting
-
-- [ ] Lab 2: 
+- [ ] Lab 2:  Sorting
 
   - [ ] Test-Train-Validate 
   - [ ] One-hot Encoding
@@ -62,15 +54,13 @@
 
 
 
-### Hands-on: User Defined Functions and Machine Learning 
+### Hands-on: Data Science and Machine Learning 
 
 - [ ] Lab 3: User Defined Functions
   - [ ] Student Assignment: 
 
-- [ ] Lab 4: Machine Learning Algorithms
-  - [ ] XGBoost
-
   
+
 
 ### Break 
 
