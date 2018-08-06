@@ -34,12 +34,15 @@ ARG NUMBA_VERSION=0.40.0
 ARG NUMPY_VERSION=1.14.3
 # Locked to Pandas 0.20.3 by https://github.com/gpuopenanalytics/pygdf/issues/118
 ARG PANDAS_VERSION=0.20.3
+ARG XGBOOST_VERSION=0.72.1
 RUN conda install -n gdf -y -c numba -c conda-forge -c defaults \
       numba=${NUMBA_VERSION} \
       numpy=${NUMPY_VERSION} \
       numpy-base=${NUMPY_VERSION} \
       pandas=${PANDAS_VERSION} \
-      jupyterlab
+      xgboost=${XGBOOST_VERSION} \
+      jupyterlab \
+      ipython-autotime
 
 # LibGDF & PyGDF build/install
 ARG LIBGDF_REPO=https://github.com/gpuopenanalytics/libgdf
@@ -59,9 +62,7 @@ RUN source activate gdf && \
     cd /pygdf && \
     python setup.py install
 
-RUN source activate gdf && conda install jupyterlab
-
-ENV TINI_VERSION=v0.16.1
+ENV TINI_VERSION=v0.18.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
 RUN chmod +x /usr/bin/tini
 
@@ -72,5 +73,5 @@ WORKDIR /notebooks
 EXPOSE 8888
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
-CMD [ "/bin/bash", "-c","source activate gdf && jupyter-lab --ip=* --NotebookApp.token='rapids'"]
+CMD [ "/bin/bash", "-c","source activate gdf && jupyter-lab --ip=* --NotebookApp.token='kdd-2018'"]
 
