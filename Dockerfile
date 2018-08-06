@@ -11,12 +11,14 @@ ARG CC_VERSION=5
 ARG CXX_VERSION=5
 RUN apt update -y --fix-missing && \
     apt upgrade -y && \
+    DEBIAN_FRONTEND=noninteractive \
     apt install -y \
       git \
       gcc-${CC_VERSION} \
       g++-${CXX_VERSION} \
       libboost-dev \
       cmake \
+      tshark \
     && rm -rf /var/lib/apt/lists/*
 
 # Install conda
@@ -36,13 +38,15 @@ ARG NUMPY_VERSION=1.14.3
 ARG PANDAS_VERSION=0.20.3
 ARG XGBOOST_VERSION=0.72.1
 RUN conda install -n gdf -y -c numba -c conda-forge -c defaults \
-      numba=${NUMBA_VERSION} \
-      numpy=${NUMPY_VERSION} \
-      numpy-base=${NUMPY_VERSION} \
-      pandas=${PANDAS_VERSION} \
-      xgboost=${XGBOOST_VERSION} \
-      jupyterlab \
-      ipython-autotime
+    numba=${NUMBA_VERSION} \
+    numpy=${NUMPY_VERSION} \
+    numpy-base=${NUMPY_VERSION} \
+    pandas=${PANDAS_VERSION} \
+    xgboost=${XGBOOST_VERSION} \
+    jupyterlab \
+    ipython-autotime
+RUN source activate gdf && \
+    pip install pyshark
 
 # LibGDF & PyGDF build/install
 ARG LIBGDF_REPO=https://github.com/gpuopenanalytics/libgdf
@@ -74,4 +78,3 @@ EXPOSE 8888
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "/bin/bash", "-c","source activate gdf && jupyter-lab --ip=* --NotebookApp.token='kdd-2018'"]
-
