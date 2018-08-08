@@ -56,8 +56,16 @@
 
 ### Hands-on: Data Science and Machine Learning 
 
-- [ ] Lab 3: User Defined Functions
-  - [ ] Student Assignment: 
+- [ ] Lab 3: Classification using XGBoost
+  - [ ] Familarize with IoT cyber network data
+  - [ ] Data ingest and feature extraction
+  - [ ] Time binning and preparation for classifiation
+  - [ ] Building XGBoost model
+  - [ ] Evaluating the model via ROC curves and AUC
+  - [ ] Student Assignment:
+    - [ ] Investigation into other time binnings, aggregations, and XGBoost parameters
+    - [ ] Using additional features (quantitative and categorical) in the data to build better models
+    - [ ] Moving beyond connection logs to other log types (e.g., DNS) and building models
 
   
 
