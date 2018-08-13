@@ -37,12 +37,20 @@ ARG NUMPY_VERSION=1.14.3
 # Locked to Pandas 0.20.3 by https://github.com/gpuopenanalytics/pygdf/issues/118
 ARG PANDAS_VERSION=0.20.3
 ARG XGBOOST_VERSION=0.72.1
+ARG SKLEARN_VERSION=0.19.2
+ARG SCIPY_VERSION=1.1.0
+ARG MATPLOTLIB_VERSION=2.2.2
+ARG SEABORN_VERSION=0.9.0
 RUN conda install -n gdf -y -c numba -c conda-forge -c defaults \
     numba=${NUMBA_VERSION} \
     numpy=${NUMPY_VERSION} \
     numpy-base=${NUMPY_VERSION} \
     pandas=${PANDAS_VERSION} \
     xgboost=${XGBOOST_VERSION} \
+    scikit-learn=${SKLEARN_VERSION} \
+    scipy=${SCIPY_VERSION} \
+    matplotlib=${MATPLOTLIB_VERSION} \
+    seaborn=${SEABORN_VERSION} \
     jupyterlab \
     ipython-autotime
 RUN source activate gdf && \
