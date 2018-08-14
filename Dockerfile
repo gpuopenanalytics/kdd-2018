@@ -41,6 +41,7 @@ ARG SKLEARN_VERSION=0.19.2
 ARG SCIPY_VERSION=1.1.0
 ARG MATPLOTLIB_VERSION=2.2.2
 ARG SEABORN_VERSION=0.9.0
+ARG TORNADO_VERSION=4.5.3
 RUN conda install -n gdf -y -c numba -c conda-forge -c defaults \
     numba=${NUMBA_VERSION} \
     numpy=${NUMPY_VERSION} \
@@ -51,6 +52,7 @@ RUN conda install -n gdf -y -c numba -c conda-forge -c defaults \
     scipy=${SCIPY_VERSION} \
     matplotlib=${MATPLOTLIB_VERSION} \
     seaborn=${SEABORN_VERSION} \
+    tornado=${TORNADO_VERSION} \
     jupyterlab \
     ipython-autotime
 RUN source activate gdf && \
