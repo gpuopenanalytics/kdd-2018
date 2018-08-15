@@ -7,7 +7,25 @@
 ## ![](https://nvidianews.nvidia.com/media/sites/219/images/logo.png)
 
 ***
+## Software / Hardware Requirements
+
+The tutorial will leverage cloud resources that will provide the a common environment for all students. 
+
+**Requirements**:
+
+- Laptop with WiFi
+
+  - We will be using the conference WiFi, please ensure that you can connect prior to the tutorial
+
+-  Web browser - latest version of any will work, preference is towards Firefox or Chrome. 
+
+  
+
 # Tutorial Agenda
+
+## Introductions
+
+- [ ] Who we are 
 
 ## Getting Connected
 
@@ -16,11 +34,8 @@
 
 ## **Introduction and Background**  
 
-- [ ] Who we are 
 - [ ] Big Data Ecosystem
 - [ ] Challenges in Big Data today
-  - [ ] Technology interoperability 
-  - [ ] Compute limitations
 - [ ] Apache Arrow
 - [ ] GPUs for compute
 - [ ] The GPU Open Analytics Initiative
@@ -66,14 +81,8 @@
 
 ## Wrap-up and Conclusion-
 
+- [ ] Roadmap
 - [ ] Scaling out to multi-GPU and multi-node
-  - [ ] Dask
-  - [ ] Dask GDF
-- [ ] Additional Algorithms and Roadmaps
-  - [ ] Graph Algorithms
-    - [ ] PageRank, Jaccard, BFS
-  - [ ] Visualization
-    - [ ] Graphistry
-  - [ ] Machine Learning Algorithms
+- [ ] Partner Activities
 - [ ] Comclusion
 
