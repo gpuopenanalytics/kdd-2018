@@ -1,5 +1,14 @@
 ## Accessing the Data
-The data can be downloaded as a 100MB tar.gz here: https://files.fm/u/4jb39m2f
+The data can be downloaded as a 100MB tar.gz here: 
+
+To download, you can use the following command:
+`wget -v -O lab3-datasets.tgz -L https://nvidia.box.com/shared/static/40eunj60et6n1re2trayb2bqqhmkwuhl.tgz`
+
+If you're on a machine that doesn't have wget, you can use:
+`curl -O lab3-datasets.tgz -L `
+
+Extract the archive using:
+`tar -zxvf lab3-datasets.tgz`
 
 ## References and Citations
 ### Netflow Data
