@@ -1,7 +1,7 @@
-##Accessing the Data
+## Accessing the Data
 The data can be downloaded as a 100MB tar.gz here: https://files.fm/u/4jb39m2f
 
-##References and Citations
+## References and Citations
 Netflow Data: https://www.cs.umd.edu/hcil/varepository/VAST%20Challenge%202013/challenges/MC3%20-%20Big%20Marketing/dataset/MC3dataset.zip
 
 NYC Taxi Data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
