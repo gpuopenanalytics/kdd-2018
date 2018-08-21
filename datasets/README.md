@@ -2,11 +2,14 @@
 The data can be downloaded as a 100MB tar.gz here: https://files.fm/u/4jb39m2f
 
 ## References and Citations
-Netflow Data: https://www.cs.umd.edu/hcil/varepository/VAST%20Challenge%202013/challenges/MC3%20-%20Big%20Marketing/dataset/MC3dataset.zip
+### Netflow Data
+https://www.cs.umd.edu/hcil/varepository/VAST%20Challenge%202013/challenges/MC3%20-%20Big%20Marketing/dataset/MC3dataset.zip
 
-NYC Taxi Data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
+### NYC Taxi Data
+http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 
-IOT Raw Data: http://149.171.189.1/
+### IOT Raw Data
+http://149.171.189.1/
 A. Sivanathan, D. Sherratt, H. Habibi Gharakheili, A. Radford, C. Wijenayake, A. Vishwanath and V. Sivaraman, "Characterizing and Classifying IoT Traffic in Smart Cities and Campuses", IEEE Infocom SmartCity17 Workshop on Smart Cities and Urban Computing, Atlanta, GA, USA, May 2017.
 
 Notes about creation of IOT Bro data:
