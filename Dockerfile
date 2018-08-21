@@ -1,7 +1,7 @@
 # An integration test & dev container which builds and installs libgdf & pygdf from master
 ARG CUDA_VERSION=9.2
 ARG LINUX_VERSION=ubuntu16.04
-FROM nvcr.io/nvidia/cuda:${CUDA_VERSION}-devel-${LINUX_VERSION}
+FROM nvidia/cuda:${CUDA_VERSION}-devel-${LINUX_VERSION}
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib
 # Needed for pygdf.concat(), avoids "OSError: library nvvm not found"
 ENV NUMBAPRO_NVVM=/usr/local/cuda/nvvm/lib64/libnvvm.so
@@ -47,7 +47,6 @@ RUN conda install -n gdf -y -c numba -c conda-forge -c defaults \
     numpy=${NUMPY_VERSION} \
     numpy-base=${NUMPY_VERSION} \
     pandas=${PANDAS_VERSION} \
-    xgboost=${XGBOOST_VERSION} \
     scikit-learn=${SKLEARN_VERSION} \
     scipy=${SCIPY_VERSION} \
     matplotlib=${MATPLOTLIB_VERSION} \
@@ -56,7 +55,8 @@ RUN conda install -n gdf -y -c numba -c conda-forge -c defaults \
     jupyterlab \
     ipython-autotime
 RUN source activate gdf && \
-    pip install pyshark
+    pip install --upgrade pip && \
+    pip install xgboost==${XGBOOST_VERSION} pyshark
 
 # LibGDF & PyGDF build/install
 ARG LIBGDF_REPO=https://github.com/gpuopenanalytics/libgdf
